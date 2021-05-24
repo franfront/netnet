@@ -1,0 +1,20 @@
+:root{
+    --primary: #000000;
+    --secondary: #D22F26;
+    --light: #FFFFFF;
+    --gray: #686868;
+}
+
+body{
+    background: var(--primary);
+    color: var(--light);
+}
+
+a{
+    color: var(--light);
+    text-decoration: none;
+}
+
+.navigation{
+    padding: 0;
+}
