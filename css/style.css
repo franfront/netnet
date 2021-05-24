@@ -5,9 +5,24 @@
     --gray: #686868;
 }
 
+@font-face {
+    font-family: 'matrix' ;
+    src: url(../fonts/AvenirNextLTPro-Regular.otf);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'matrix' ;
+    src: url(../fonts/AvenirNextLTPro-Bold.otf);
+    font-weight: 700;
+    font-style: normal;
+}
+
 body{
     background: var(--primary);
     color: var(--light);
+    margin: 0px;
+    font-family: 'matrix';
 }
 
 a{
@@ -17,4 +32,26 @@ a{
 
 .navigation{
     padding: 0;
+    margin: 0px;
+    display: grid;
+    grid-auto-columns: 100px;
+    grid-auto-flow: column;
+    justify-content: space-around;
+}
+
+.navigation-item{
+    list-style: none;
+    text-align: center;
+}
+
+.header{
+    
+    padding: 15px 15px 100px;
+    position: relative;
+    z-index: 2;
+    background-image: linear-gradient(to bottom, black 0%, black 80%, rgba(0,0,0, .5) 85%, transparent 100%);
+}
+
+.feature{
+    margin-top: -90px;
 }
