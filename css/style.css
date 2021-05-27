@@ -64,7 +64,7 @@ a{
     bottom: 0;
     left: 0;
     right: 0;
-    background-image: linear-gradient(to top, black 0%, transparent 100%);
+    background-image: linear-gradient(to top, black 0%, black 40% ,transparent 100%);
 }
 
 
@@ -97,9 +97,52 @@ a{
 }
 
 .button{
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    padding: 2px 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+.button::before{
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
 
 }
 
 .button-secondary{
+    background: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    min-width: 100px;
+    border: none;
+    cursor: pointer;
+}
 
+.button-secondary::before{
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: auto;
+    margin-bottom: 5px;
+
+}
+
+.icon-plus::before{
+    background: url(/images/icons/plus.svg);
+}
+
+
+.icon-play::before{
+    background: url(/images/icons/play.svg);
+}
+
+
+.icon-info::before{
+    background: url(/images/icons/info.svg);
 }
