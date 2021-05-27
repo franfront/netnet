@@ -54,4 +54,52 @@ a{
 
 .feature{
     margin-top: -90px;
+    position: relative;
+    
+
+}
+
+.feature-details{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to top, black 0%, transparent 100%);
+}
+
+
+.feature-actions{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 2px;
+}
+
+.tags{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    padding: 0px;
+}
+
+.tag{
+    display: flex;
+}
+
+.tag:before{
+    content: "·";
+    margin-right: 10px;
+}
+
+.tag:first-child::before{
+    display: none;
+}
+
+.button{
+
+}
+
+.button-secondary{
+
 }
