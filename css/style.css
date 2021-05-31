@@ -148,7 +148,7 @@ a{
 
 
 .icon-info::before{
-    background: url('images/icons/info.svg');
+    background: url('/images/icons/info.svg');
 }
 
 
