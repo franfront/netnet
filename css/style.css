@@ -79,7 +79,6 @@ a{
 }
 
 .tags{
-    border: 1px solid red;
     display: flex;
     justify-content: center;
     gap: 3px;
