@@ -28,6 +28,7 @@ body{
 a{
     color: var(--light);
     text-decoration: none;
+    
 }
 
 .navigation{
@@ -49,13 +50,13 @@ a{
     padding: 15px 15px 100px;
     position: relative;
     z-index: 2;
-    background-image: linear-gradient(to bottom, black 0%, black 80%, rgba(0,0,0, .5) 85%, transparent 100%);
+    background-image: linear-gradient(to bottom, black 0%, black 50%, rgba(0,0,0, .5) 85%, transparent 100%);
 }
 
 .feature{
     margin-top: -90px;
     position: relative;
-    
+    overflow: hidden;
 
 }
 
@@ -72,7 +73,7 @@ a{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding-bottom: 2px;
+    padding-bottom: 2em;
 }
 
 .tags{
@@ -145,4 +146,69 @@ a{
 
 .icon-info::before{
     background: url(/images/icons/info.svg);
+}
+
+
+.footer{
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--primary);
+    padding: 5px;
+}
+
+.list{
+    padding: 0 16px;
+    margin-top: 15px;    
+}
+
+.list-content{
+    
+    white-space: nowrap;
+    overflow-x: auto;
+    
+}
+
+.list-item{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+
+
+.list-item:first-child{
+    margin: 0;
+}
+
+.tab-list{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    list-style: none;
+    padding-bottom: 5px;
+    
+}
+
+.tab-list a{
+    color: var(--gray);
+}
+
+.tab-item{
+    text-align: center;
+}
+
+.tab-item svg{
+    display: block;
+    margin: auto;
+}
+
+.tab-item path{
+    fill: var(--gray) ;
+}
+
+.tab-item:hover path, .tab-item:hover span{
+    color: var(--light);
+    fill: var(--light);
 }
