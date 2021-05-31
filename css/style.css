@@ -138,17 +138,17 @@ a{
 }
 
 .icon-plus::before{
-    background: url('images/icons/plus.svg');
+    background: url('/images/icons/plus.svg');
 }
 
 
 .icon-play::before{
-    background: url('images/icons/play.svg');
+    background: url('/images/icons/play.svg');
 }
 
 
 .icon-info::before{
-    background: url('./images/icons/info.svg');
+    background: url('/images/icons/info.svg');
 }
 
 
