@@ -79,7 +79,7 @@ a{
 .tags{
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 2px;
     list-style: none;
     padding: 0px;
 }
@@ -90,7 +90,8 @@ a{
 
 .tag:before{
     content: "·";
-    margin-right: 10px;
+    margin-right: 1px;
+    position: relative;
 }
 
 .tag:first-child::before{
